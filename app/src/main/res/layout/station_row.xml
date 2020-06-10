@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:paddingLeft="10dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iconRow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:src="@drawable/preference_wrapped_icon" />
+
+    <TextView
+        android:id="@+id/stationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iconRow"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/typeAndPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stationName"
+        android:layout_toRightOf="@+id/iconRow"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
